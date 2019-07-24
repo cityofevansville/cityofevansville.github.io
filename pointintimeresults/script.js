@@ -27,7 +27,7 @@ var speedData = {
 var chartOptions = {
   title: {
       display: true,
-      text: "Regional Point in Time Homelessness Results"
+      text: 'Regional Point in Time Homelessness Results'
   },
   responsive: true,
   legend: {
