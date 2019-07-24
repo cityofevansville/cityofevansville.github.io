@@ -28,6 +28,7 @@ var chartOptions = {
   title: {
       display: true,
       text: "Regional Point in Time Homelessness Results",
+  },
   responsive: true,
   legend: {
     display: true,
