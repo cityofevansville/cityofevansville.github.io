@@ -25,6 +25,7 @@ var speedData = {
 };
 
 var chartOptions = {
+  responsive: true,
   legend: {
     display: true,
     position: 'top',
