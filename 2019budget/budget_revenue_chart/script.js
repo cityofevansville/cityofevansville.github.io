@@ -29,6 +29,7 @@
   ]
 };
     var options = {
+       responsive: true,
   "title": {
     "display": true,
     "text": "2020 Estimated Budget Revenue — $439,441,105"
