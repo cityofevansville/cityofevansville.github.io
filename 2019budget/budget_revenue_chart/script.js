@@ -48,7 +48,7 @@
 };
 
     var myChart = new Chart(ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: data,
         options: options
     });
