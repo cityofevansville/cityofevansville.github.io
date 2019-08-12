@@ -31,6 +31,7 @@
   ]
 };
     var options = {
+        scaleLabel: function(label){return  '$' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
   "title": {
     "display": true,
     "text": "Health Insurance Costs"
