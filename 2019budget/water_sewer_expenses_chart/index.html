@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>Water & Sewer Utility (consolidated)</title>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>	
 </head>
 <body>
+	<canvas id="myChart" width="400" height="400"></canvas>
 	<script>
 		var ctx = document.getElementById('myChart');
     var data = {
@@ -64,7 +66,5 @@
         options: options
     });
 	</script>
-	<canvas id="myChart" width="400" height="400"></canvas>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 </body>
 </html>
