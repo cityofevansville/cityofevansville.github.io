@@ -33,7 +33,8 @@ var ctx = document.getElementById('myChart').getContext('2d');
   ]
 };
     var options = {
-  "title": {
+  responsive: true,
+        "title": {
     "display": true,
     "text": "Water & Sewer Utility (consolidated)"
   },
