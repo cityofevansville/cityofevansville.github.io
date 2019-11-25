@@ -48,12 +48,13 @@ var ctx = document.getElementById('myChart').getContext('2d');
 };
     var options = {
   responsive: true,
+  maintainAspectRatio: false,
         "title": {
     "display": true,
     "text": "Comparison of Residential Trash Fees for Local Indiana Communities"
   },
   "legend": {
-    "display": true
+    "display": false
   },
   "scales": {
     "yAxes": [
