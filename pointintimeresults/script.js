@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontSize = 18;
 
 var dataFirst = {
     label: "Overall Homeless",
-    data: [462, 495, 428, 427, 477,488],
+    data: [462, 495, 428, 427, 477, 488],
     lineTension: 0,
     fill: false,
     borderColor: 'blue'
