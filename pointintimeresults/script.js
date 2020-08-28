@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontSize = 18;
 
 var dataFirst = {
     label: "Overall Homeless",
-    data: [462, 495, 428, 427, 477],
+    data: [462, 495, 428, 427, 477,488],
     lineTension: 0,
     fill: false,
     borderColor: 'blue'
@@ -13,14 +13,14 @@ var dataFirst = {
 
 var dataSecond = {
     label: "Chronically Homeless",
-    data: [105, 77, 56, 56, 35],
+    data: [105, 77, 56, 56, 35, 31],
     lineTension: 0,
     fill: false,
   borderColor: 'red'
   };
 
 var speedData = {
-  labels: ['2015', '2016', '2017', '2018', '2019'],
+  labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
   datasets: [dataFirst, dataSecond]
 };
 
