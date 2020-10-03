@@ -1,4 +1,4 @@
-var homelessCanvas = document.getElementById("unemployment");
+var unemploymentCanvas = document.getElementById("unemployment");
 
 Chart.defaults.global.defaultFontFamily = "Lato";
 Chart.defaults.global.defaultFontSize = 18;
@@ -18,12 +18,12 @@ var speedData = {
 
 var chartOptions = {
   title: {
-      display: true,
+      display: false,
       text: '2020 Evansville Unemployment Rate'
   },
   responsive: true,
   legend: {
-    display: true,
+    display: false,
     position: 'top',
     labels: {
       boxWidth: 80,
@@ -32,8 +32,8 @@ var chartOptions = {
   }
 };
 
-var lineChart = new Chart(homelessCanvas, {
-  type: 'line',
+var lineChart = new Chart(unemploymentCanvas, {
+  type: 'curve_chart',
   data: speedData,
   options: chartOptions
 });
