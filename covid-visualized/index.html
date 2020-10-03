@@ -1,17 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Evansville COVID-19 Pandemic, Visualized</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<canvas id="unemployment"></canvas>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js'></script>
-<script  src="./unemployment.js"></script>
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Rate'],
+          ['Jan',  3.4],
+          ['Feb',  3.1],
+          ['Mar',  3.1],
+          ['Apr',  3.1],
+          ['May',  14.8],
+          ['Jun',  10.7],
+          ['Jul',  9.2],
+          ['Aug',  5.9]
+        ]);
 
-</body>
+        var options = {
+          title: '2020 Evansville Unemployment Rate',
+          curveType: 'function',
+          legend: { display: false }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
 </html>
