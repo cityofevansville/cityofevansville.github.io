@@ -1,36 +1,7 @@
 <html>
   <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Month', 'Rate'],
-          ['Jan',  3.4],
-          ['Feb',  3.1],
-          ['Mar',  3.1],
-          ['Apr',  3.1],
-          ['May',  14.8],
-          ['Jun',  10.7],
-          ['Jul',  9.2],
-          ['Aug',  5.9]
-        ]);
-
-        var options = {
-          title: '2020 Evansville Unemployment Rate',
-          curveType: 'function',
-          legend: { display: false }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
   </head>
   <body>
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRUkGYXZttJ-BWcFolCApc8o7JGbmmH9yISx23A2RB7Fu3z1F8NzkFUtm396CHHbcI4CpWiBTxRSRxx/pubhtml?gid=1301987966&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
   </body>
 </html>
