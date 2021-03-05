@@ -4,9 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GeoAR.js demo</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <!-- include ar.js for aframe -->
+    <script src='vendor/ar.js/aframe/build/aframe-ar.js'></script>
+    <script>ARjs.Context.baseURL = 'vendor/ar.js/three.js/'</script>
+    <!-- include gps-ar.js -->
+    <script src="../src/gps-camera-debug.js"></script>
+    <script src="../src/gps-camera-position.js"></script>
+    <script src="../src/gps-camera-rotation.js"></script>
+    <script src="../src/gps-entity-place.js"></script>
   </head>
 
   <body style="margin: 0; overflow: hidden;">
